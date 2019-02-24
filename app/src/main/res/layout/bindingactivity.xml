@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable name="user" type="com.kotline.meghanasol.koltinelearn.databindingtuts.viewbindingclass.User"></variable>
+
+    </data>
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="106dp"
+                android:text="@{user.name}"/>
+
+        <TextView
+                android:text="@{user.email}"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"/>
+
+    </LinearLayout>
+</layout>
